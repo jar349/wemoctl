@@ -41,7 +41,7 @@ function command-version {
     usage-help
   fi
 
-  local newver = $1
+  local newver=$1
   echo $newver > $BASE_DIR/.version
   git add $BASE_DIR/.version
   git commit -m "releasing version $newver"
