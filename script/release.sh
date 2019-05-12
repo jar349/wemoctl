@@ -47,6 +47,7 @@ function command-version {
   git commit -m "releasing version $newver"
   git tag "$newver"
   git push origin --tags
+  git push origin master
   docker build -t jar349/wemoctl:$newver $BASE_DIR
   docker tag jar349/wemoctl:$newver docker.pkg.github.com/jar349/wemoctl/wemoctl:latest
   docker tag jar349/wemoctl:$newver docker.pkg.github.com/jar349/wemoctl/wemoctl:$newver
