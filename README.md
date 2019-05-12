@@ -23,11 +23,11 @@ minutes past every hour.
 #### As a docker container
 If you want to control devices on the command line, as a docker container is the best way because all the dependencies
 of the `wemoctl` application are already setup for you.  There's no need to clone or download this repo because I've 
-built the docker image and uploaded it to [docker hub](https://hub.docker.com/r/jar349/wemoctl) for you.
+built the docker image and uploaded it to [GitHub](https://github.com/jar349/wemoctl/packages) for you.
 
 First, download the docker image:
 ```
-docker pull jar349/wemoctl:latest
+docker pull docker.pkg.github.com/jar349/wemoctl/wemoctl:latest
 ```
 Then, if you want to turn on a device called "White LED Bar 1" do this:
 ```
